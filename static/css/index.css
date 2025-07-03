@@ -25,7 +25,6 @@ body {
 
 .teaser {
   font-family: 'Google Sans', sans-serif;
-  background-color: #ff3860;
 }
 
 .light-grey-bg{
@@ -38,6 +37,8 @@ body {
 
 .hero-row{
   display: flex;  
+  max-width: 700px;
+  overflow: auto;
 }
 
 .hero-column{
