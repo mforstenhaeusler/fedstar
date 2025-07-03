@@ -27,6 +27,28 @@ body {
   font-family: 'Google Sans', sans-serif;
 }
 
+.hero-body-teaser {
+  padding: 20px;
+  background-color: #F5F5F5;
+}
+
+.hero-row{
+  display: flex;
+  
+}
+
+.hero-column{
+  flex: 50%;
+  padding: 2px;
+}
+
+.hero-img{
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(222, 222, 222);
+}
+
+
+
 
 .publication-title {
 }
@@ -155,3 +177,5 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+
