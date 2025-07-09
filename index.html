@@ -270,7 +270,7 @@
             <td><b>0.720</b></td>
             <td><b>2.375</b></td>
           </tr>
-          <tr>
+          <tr class="light-grey-bg">
             <td>Transformer</td>
             <td><b>0.743</b></td>
             <td><b>0.729</b></td>
@@ -288,7 +288,7 @@
             <td>0.711</td>
             <td>2.375</td>
           </tr>
-          <tr>
+          <tr class="light-grey-bg">
             <td>FedAvg vs FedProx</td>
             <td>5 / 5</td>
             <td>5 / 5</td>
@@ -306,7 +306,7 @@
             <td>0.686</td>
             <td>-</td>
           </tr>
-          <tr>
+          <tr class="light-grey-bg">
             <td>E=5</td>
             <td><b>0.734</b></td>
             <td><b>0.724</b></td>
@@ -326,7 +326,7 @@
             <td>0.740</td>
             <td>4.250</td>
           </tr>
-          <tr>
+          <tr class="light-grey-bg">
             <td>LSTM</td>
             <td>0.748</td>
             <td>0.738</td>
@@ -335,60 +335,60 @@
             <td>0.739</td>
             <td>4.000</td>
           </tr>
-        <tr>
-          <td>GRU</td>
-          <td>0.743</td>
-          <td>0.732</td>
-          <td><b>0.730</b></td>
-          <td>0.734</td>
-          <td><b>0.732</b></td>
-          <td>3.250</td>
-        </tr>
-        <tr>
-          <td>Transformer</td>
-          <td>0.758</td>
-          <td>0.746</td>
-          <td>0.741</td>
-          <td>0.751</td>
-          <td>0.743</td>
-          <td>3.250</td>
-        </tr>
-        <tr>
-          <td>STaRFormer</td>
-          <td><b>0.770</b></td>
-          <td><b>0.758</b></td>
-          <td><b>0.754</b></td>
-          <td><b>0.762</b></td>
-          <td><b>0.752</b></td>
-          <td><b>1.250</b></td>
-        </tr>
-        <tr>
-          <td>FedAvg vs FedProx</td>
-          <td>2 / 5</td>
-          <td>2 / 5</td>
-          <td>2 / 5</td>
-          <td>2 / 5</td>
-          <td>2 / 5</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>E=1</td>
-          <td><b>0.754</b></td>
-          <td><b>0.743</b></td>
-          <td><b>0.741</b></td>
-          <td>0.745</td>
-          <td>0.741</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>E=5</td>
-          <td>0.752</td>
-          <td>0.752</td>
-          <td>0.738</td>
-          <td><b>0.748</b></td>
-          <td><b>0.741</b></td>
-          <td>-</td>
-        </tr>
+          <tr>
+            <td>GRU</td>
+            <td>0.743</td>
+            <td>0.732</td>
+            <td><b>0.730</b></td>
+            <td>0.734</td>
+            <td><b>0.732</b></td>
+            <td>3.250</td>
+          </tr>
+          <tr class="light-grey-bg">
+            <td>Transformer</td>
+            <td>0.758</td>
+            <td>0.746</td>
+            <td>0.741</td>
+            <td>0.751</td>
+            <td>0.743</td>
+            <td>3.250</td>
+          </tr>
+          <tr>
+            <td>STaRFormer</td>
+            <td><b>0.770</b></td>
+            <td><b>0.758</b></td>
+            <td><b>0.754</b></td>
+            <td><b>0.762</b></td>
+            <td><b>0.752</b></td>
+            <td><b>1.250</b></td>
+          </tr>
+          <tr class="light-grey-bg">
+            <td>FedAvg vs FedProx</td>
+            <td>2 / 5</td>
+            <td>2 / 5</td>
+            <td>2 / 5</td>
+            <td>2 / 5</td>
+            <td>2 / 5</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>E=1</td>
+            <td><b>0.754</b></td>
+            <td><b>0.743</b></td>
+            <td><b>0.741</b></td>
+            <td>0.745</td>
+            <td>0.741</td>
+            <td>-</td>
+          </tr>
+          <tr class="light-grey-bg">
+            <td>E=5</td>
+            <td>0.752</td>
+            <td>0.752</td>
+            <td>0.738</td>
+            <td><b>0.748</b></td>
+            <td><b>0.741</b></td>
+            <td>-</td>
+          </tr>
         </table>
       </div>
     </div>
@@ -407,7 +407,89 @@
         </ul>
       </div>
       <div class="results-column">
-        
+        <table class="results-table">
+          <tr>
+            <th>Settings</th>
+            <th>Aggregation</th>
+            <th>&lambda<sub>CL</sub></th>
+            <th>Accuracy</th>
+            <th>F<sub>0.5</sub>-Score</th>
+            <th>F<sub>1</sub>-Score</th>
+            <th>Precision</th>
+            <th>Recall</th>
+          </tr>
+          <tr class="light-grey-bg">
+            <td rowspan="4" style="text-align: center; vertical-align: middle;"> Cross-Device</td>
+            <td rowspan="2" style="text-align: center; vertical-align: middle;"> FedAvg</td>
+            <td>0.1</td>
+            <td><b>0.743</b></td>
+            <td><b>0.723</b></td>
+            <td><b>0.722</b></td>
+            <td><b>0.735</b></td>
+            <td><b>0.718</b></td>
+          </tr>
+          <tr>
+            <td>1.0</td>
+            <td>0.728</td>
+            <td>0.702</td>
+            <td>0.687</td>
+            <td>0.718</td>
+            <td>0.683</td>
+          </tr>
+          <tr>
+            <td rowspan="2" style="text-align: center; vertical-align: middle;"> FedProx</td>
+            <td class="light-grey-bg">0.1</td>
+            <td class="light-grey-bg"><b>0.743</b></td>
+            <td class="light-grey-bg"><b>0.729</b></td>
+            <td class="light-grey-bg"><b>0.722</b></td>
+            <td class="light-grey-bg"><b>0.735</b></td>
+            <td class="light-grey-bg"><b>0.718</b></td>
+          </tr>
+          <tr>
+            <td>1.0</td>
+            <td>0.721</td>
+            <td>0.701</td>
+            <td>0.687</td>
+            <td>0.718</td>
+            <td>0.683</td>
+          </tr>
+          <!-- Cross Silo -->
+          <tr class="light-grey-bg">
+            <td rowspan="4" style="text-align: center; vertical-align: middle;"> Cross-Silo</td>
+            <td rowspan="2" style="text-align: center; vertical-align: middle;"> FedAvg</td>
+            <td>0.1</td>
+            <td>0.763</td>
+            <td>0.759</td>
+            <td>0.750</td>
+            <td>0.752</td>
+            <td>0.749</td>
+          </tr>
+          <tr>
+            <td>1.0</td>
+            <td><b>0.784</b></td>
+            <td><b>0.773</b></td>
+            <td><b>0.770</b></td>
+            <td><b>0.776</b></td>
+            <td><b>0.762</b></td>
+          </tr>
+          <tr>
+            <td rowspan="2" style="text-align: center; vertical-align: middle;"> FedProx</td>
+            <td class="light-grey-bg">0.1</td>
+            <td class="light-grey-bg">0.744</td>
+            <td class="light-grey-bg">0.722</td>
+            <td class="light-grey-bg">0.729</td>
+            <td class="light-grey-bg">0.735</td>
+            <td class="light-grey-bg">0.719</td>
+          </tr>
+          <tr>
+            <td>1.0</td>
+            <td><b>0.752</b></td>
+            <td><b>0.738</b></td>
+            <td><b>0.729</b></td>
+            <td><b>0.748</b></td>
+            <td><b>0.724</b></td>
+          </tr>
+        </table>
       </div>
     </div>
     
