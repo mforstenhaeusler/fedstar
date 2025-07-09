@@ -182,4 +182,13 @@ body {
   border-radius: 5px;
 }
 
+.results-row{
+  display: flex;  
+  overflow: auto;
+}
+
+.results-column{
+  flex: 50%;
+  padding: 2px;
+}
 
