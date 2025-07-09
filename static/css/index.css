@@ -184,14 +184,14 @@ body {
 
 .results-row{
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   display: flex;  
   overflow: auto;
 }
 
 .results-column{
   flex: 50%;
-  padding: 2px;
+  padding: 10px;
 }
 
 .results-table{
