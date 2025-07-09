@@ -207,31 +207,75 @@
 <section class="section" id="Results">
   <div class="container is-max-desktop content">
     <h2 class="title">Results</h2>
-    <h4 class="title">Results (T=50)</h4>
-    <ul>
-      <li>Cross-Device setting presents a challenging task</li>
-      <ul>
-        <li>due to limited number of training samples</li>
-        <li>non-i.i.d. characteristics</li>
-      </ul>
-      <li>Lower performance metrics across all models (cross-device)</li>
-      <!--ul>Lower performance metrics across all models (cross-device):
-        <li>Significant impact on LSTM and STaRFormer (larger models).</li>
-        <li>STaRFormer performs well in cross-silo but on par in cross-device settings.</li>
-      </ul-->
-      <li>Proximal term in FedProx helps stabilize training, when client dataset sizes are larger</li>
-    </ul>
-    <h4 class="title">Impact of distributed local contrastive learning.</h4>
-    Cross-Device: 
-    <ul>
-      <li>Restricts effectiveness of CL.</li>
-      <li>Excessive weight on CL loss --> noisy, misaligned representations.</li>
-    </ul>
-    Cross-Silo:
-    <ul>
-      <li>Fewer clients with larger, more variable datasets allow for meaningful positive pairings.</li>      
-      <li>Robust representations positively impact the global objective.</li>
-    </ul>
+    <div class="results-row">
+      <h4 class="title">Results (T=50)</h4>
+      <div class="results-column">
+        <ul>
+          <li>Cross-Device setting presents a challenging task</li>
+          <ul>
+            <li>due to limited number of training samples</li>
+            <li>non-i.i.d. characteristics</li>
+          </ul>
+          <li>Lower performance metrics across all models (cross-device)</li>
+          <!--ul>Lower performance metrics across all models (cross-device):
+            <li>Significant impact on LSTM and STaRFormer (larger models).</li>
+            <li>STaRFormer performs well in cross-silo but on par in cross-device settings.</li>
+          </ul-->
+          <li>Proximal term in FedProx helps stabilize training, when client dataset sizes are larger</li>
+        </ul>
+      </div>
+      <div class="results-column">
+        <table>
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr>
+            <th>Setting</th>
+            <th>Evaluation Criterion</th>
+            <th>Accuracy</th>
+            <th>F0.5-Score</th>
+            <th>F1-Score</th>
+            <th>Precision</th>
+            <th>Recall</th>
+            <th>Avg. Rank (Accuracy)</th>
+          </tr>
+          <tr>
+            <td>Cross-Device</td>
+            <td>RNN</td>
+            <td>0.720</td>
+            <td>0.706</td>
+            <td>0.695</td>
+            <td>0.726</td>
+            <td>0.702</td>
+            <td>4.375</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>LSTM</td>
+            
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="results-row">
+      <h4 class="title">Impact of distributed local contrastive learning.</h4>
+      <div class="results-column">
+        Cross-Device: 
+        <ul>
+          <li>Restricts effectiveness of CL.</li>
+          <li>Excessive weight on CL loss --> noisy, misaligned representations.</li>
+        </ul>
+        Cross-Silo:
+        <ul>
+          <li>Fewer clients with larger, more variable datasets allow for meaningful positive pairings.</li>      
+          <li>Robust representations positively impact the global objective.</li>
+        </ul>
+      </div>
+      <div class="results-column"></div>
+    </div>
+    
     <h4 class="title">Results (T=200 and E=1)</h4>
     <ul>
       <li>More extensive and structed client datasets lead to higher performance (cross-silo), otherwise effectiveness of local CL is restricted.</li>
