@@ -241,8 +241,9 @@
             <th>Recall</th>
             <th>Avg. Rank (Accuracy)</th>
           </tr>
+          <!-- Cross Device -->
           <tr>
-            <td></td>
+            <td rowspan="8">Cross</td>
             <td>RNN</td>
             <td>0.720</td>
             <td>0.706</td>
@@ -252,7 +253,6 @@
             <td>4.375</td>
           </tr>
           <tr>
-            <td></td>
             <td>LSTM</td>
             <td>0.701</td>
             <td>0.624</td>
@@ -261,8 +261,7 @@
             <td>0.664</td>
             <td>3.375</td>
           </tr>
-          <tr>
-            <td></td>            
+          <tr>      
             <td>GRU</td>
             <td>0.736</td>
             <td>0.724</td>
@@ -272,7 +271,6 @@
             <td>2.375</td>
           </tr>
           <tr>
-            <td>Cross-</td>
             <td>Transformer</td>
             <td>0.743</td>
             <td>0.729</td>
@@ -282,7 +280,6 @@
             <td>2.500</td>
           </tr>
           <tr>
-            <td>Device</td>
             <td>STaRFormer</td>
             <td>0.740</td>
             <td>0.726</td>
@@ -292,7 +289,6 @@
             <td>2.375</td>
           </tr>
           <tr>
-            <td></td>
             <td>FedAvg vs FedProx</td>
             <td>5 / 5</td>
             <td>5 / 5</td>
@@ -302,7 +298,6 @@
             <td>-</td>
           </tr>
           <tr>
-            <td></td>
             <td>E=1</td>
             <td>0.722</td>
             <td>0.680</td>
@@ -312,7 +307,6 @@
             <td>-</td>
           </tr>
           <tr>
-            <td></td>
             <td>E=5</td>
             <td>0.734</td>
             <td>0.724</td>
@@ -323,7 +317,7 @@
           </tr>
           <!-- Cross Silo -->
           <tr>
-            <td></td>
+            <td rowspan="8"></td>
             <td>RNN</td>
             <td>0.746</td>
             <td>0.737</td>
@@ -333,7 +327,6 @@
             <td>4.250</td>
           </tr>
           <tr>
-            <td></td>
             <td>LSTM</td>
             <td>0.748</td>
             <td>0.738</td>
@@ -343,7 +336,6 @@
             <td>4.000</td>
           </tr>
         <tr>
-          <td></td>
           <td>GRU</td>
           <td>0.743</td>
           <td>0.732</td>
@@ -353,7 +345,6 @@
           <td>3.250</td>
         </tr>
         <tr>
-          <td>Cross-</td>
           <td>Transformer</td>
           <td>0.758</td>
           <td>0.746</td>
@@ -363,7 +354,6 @@
           <td>3.250</td>
         </tr>
         <tr>
-          <td></td>
           <td>STaRFormer</td>
           <td>0.770</td>
           <td>0.758</td>
@@ -372,36 +362,33 @@
           <td>0.752</td>
           <td>1.250</td>
         </tr>
-          <tr>
-            <td></td>
-            <td>FedAvg vs FedProx</td>
-            <td>2 / 5</td>
-            <td>2 / 5</td>
-            <td>2 / 5</td>
-            <td>2 / 5</td>
-            <td>2 / 5</td>
-            <td>-</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>E=1</td>
-            <td>0.754</td>
-            <td>0.743</td>
-            <td>0.741</td>
-            <td>0.745</td>
-            <td>0.741</td>
-            <td>-</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>E=5</td>
-            <td>0.752</td>
-            <td>0.752</td>
-            <td>0.738</td>
-            <td>0.748</td>
-            <td>0.741</td>
-            <td>-</td>
-          </tr><
+        <tr>
+          <td>FedAvg vs FedProx</td>
+          <td>2 / 5</td>
+          <td>2 / 5</td>
+          <td>2 / 5</td>
+          <td>2 / 5</td>
+          <td>2 / 5</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>E=1</td>
+          <td>0.754</td>
+          <td>0.743</td>
+          <td>0.741</td>
+          <td>0.745</td>
+          <td>0.741</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>E=5</td>
+          <td>0.752</td>
+          <td>0.752</td>
+          <td>0.738</td>
+          <td>0.748</td>
+          <td>0.741</td>
+          <td>-</td>
+        </tr>
         </table>
       </div>
     </div>
