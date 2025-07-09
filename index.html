@@ -207,9 +207,10 @@
 <section class="section" id="Results">
   <div class="container is-max-desktop content">
     <h2 class="title">Results</h2>
-    <h4 class="title">Results - T=50</h4>
+    <h4 class="title">Results (T=50)</h4>
     <ul>
-      <ul>Cross-Device setting presents a challenging task:
+      <li>Cross-Device setting presents a challenging task</li>
+      <ul>
         <li>due to limited number of training samples</li>
         <li>non-i.i.d. characteristics</li>
       </ul>
@@ -221,13 +222,29 @@
       <li>Proximal term in FedProx helps stabilize training, when client dataset sizes are larger</li>
     </ul>
     <h4 class="title">Impact of distributed local contrastive learning.</h4>
-    <p>
-        
-    </p>
-    <h4 class="title">Results - T=200 and E=1</h4>
-    <p>
-        
-    </p>
+    Cross-Device: 
+    <ul>
+      <li>Restricts effectiveness of CL.</li>
+      <li>Excessive weight on CL loss --> noisy, misaligned representations.</li>
+    </ul>
+    Cross-Silo:
+    <ul>
+      <li>Fewer clients with larger, more variable datasets allow for meaningful positive pairings.</li>      
+      <li>Robust representations positively impact the global objective.</li>
+    </ul>
+    <h4 class="title">Results (T=200 and E=1)</h4>
+    <ul>
+      <li>More extensive and structed client datasets lead to higher performance (cross-silo), otherwise effectiveness of local CL is restricted.</li>
+      <li>FedProx algorithm promotes consistent convergence across both cross-silo and cross-device scenarios.</li>
+      <li>The distributed semi-supervised CL component accelerates convergence, especially at the beginning of training.</li>
+      <li>RNN-based Methods take longer to converge </li>
+      <li>Overfitting:</li>
+      <ul>
+        <li>The distributed semi-supervised CL makes at transformer model more prone to overfitting than vanilla Transformers.</li>
+        <li>FedProx prevents overfitting in cross-silo setting.</li>
+        <li>Overfitting is less problematic in cross-device setting.</li>
+      </ul>
+    </ul>
   </div>
 </section>
 
