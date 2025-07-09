@@ -207,15 +207,24 @@
 <section class="section" id="Results">
   <div class="container is-max-desktop content">
     <h2 class="title">Results</h2>
-    <h3 class="title">Results - T=50</h3>
+    <h4 class="title">Results - T=50</h4>
+    <ul>
+      <ul>Cross-Device setting presents a challenging task:
+        <li>due to limited number of training samples</li>
+        <li>non-i.i.d. characteristics</li>
+      </ul>
+      <li>Lower performance metrics across all models (cross-device)</li>
+      <!--ul>Lower performance metrics across all models (cross-device):
+        <li>Significant impact on LSTM and STaRFormer (larger models).</li>
+        <li>STaRFormer performs well in cross-silo but on par in cross-device settings.</li>
+      </ul-->
+      <li>Proximal term in FedProx helps stabilize training, when client dataset sizes are larger</li>
+    </ul>
+    <h4 class="title">Impact of distributed local contrastive learning.</h4>
     <p>
         
     </p>
-    <h3 class="title">Impact of distributed local contrastive learning.</h3>
-    <p>
-        
-    </p>
-    <h3 class="title">Results - T=200 and E=1</h3>
+    <h4 class="title">Results - T=200 and E=1</h4>
     <p>
         
     </p>
